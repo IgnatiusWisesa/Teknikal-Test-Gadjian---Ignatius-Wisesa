@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "ac2d07d2-219a-4ece-a744-57b674773d63",
+		"name": "Teknikal Test Gadjian - Ignatius Wisesa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/employees",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Employee Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/employees/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Employee 3\",\r\n    \"phone_number\": \"62 3092874932\",\r\n    \"jobtitle\": \"Backend Developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/employees",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Employee 3 Updated\",\r\n    \"phone_number\": \"62 1111111\",\r\n    \"jobtitle\": \"Software Developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/employees/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/employees/6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"employees",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reverse Algorithm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"character\": \"abcde\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/reverse",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"reverse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fibonacci Algorithm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"n\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/fibonacci",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"fibonacci"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Combination Algorithm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"n\": 4,\r\n    \"r\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/combination",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"combination"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
